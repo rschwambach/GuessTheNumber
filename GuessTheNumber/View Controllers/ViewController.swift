@@ -52,8 +52,8 @@ class ViewController: UIViewController {
                 messageLabel.alpha = 0
                 randomizeNumber()
                 performSegue(withIdentifier: "segueGameView", sender: self)
-                inputNumberOne.text = ""
-                inputNumberTwo.text = ""
+                Utilities.emptyTextField(inputNumberOne)
+                Utilities.emptyTextField(inputNumberTwo)
             }
         }
         else {

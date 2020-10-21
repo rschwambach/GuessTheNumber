@@ -53,5 +53,10 @@ class Utilities {
         label.font = label.font.withSize(40)
         label.layer.masksToBounds = true
     }
+    
+    static func emptyTextField(_ textField: UITextField) {
+        
+        textField.text = ""
+    }
         
 }

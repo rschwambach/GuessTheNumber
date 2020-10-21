@@ -49,7 +49,7 @@ class GameViewController: UIViewController {
                 messageLabel.text = "Number is Higher Than \(guessInputed!)"
                 counter += 1
                 resultOfTriesLabel.text = String(counter)
-                guessInput.text = ""
+                Utilities.emptyTextField(guessInput)
                 dismissMyKeyboard()
             }
             else if guessInputed! > randomResult! {
@@ -58,7 +58,7 @@ class GameViewController: UIViewController {
                 messageLabel.text = "Number is Lower Than \(guessInputed!)"
                 counter += 1
                 resultOfTriesLabel.text = String(counter)
-                guessInput.text = ""
+                Utilities.emptyTextField(guessInput)
                 dismissMyKeyboard()
             }
             else {
